@@ -12,19 +12,24 @@ class _HomeScreenState extends State<HomeScreen> {
   int _counter = 0;
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade300,
       appBar: AppBar(
-        title: Text('Flutter CAMP'),
-      ),
-      body: Center(
-        child: Text(_counter.toString()),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            _counter = _counter + 1;
-          });
-        },
-        child: const Icon(Icons.add),
+        leading: const Icon(
+          Icons.chevron_left,
+          size: 30,
+          color: Colors.white,
+        ),
+        elevation: 10,
+        backgroundColor: Colors.orangeAccent,
+        centerTitle: true,
+        title: const Text(
+          "Home Screen",
+          style: TextStyle(
+              letterSpacing: 1,
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.normal),
+        ),
       ),
     );
   }
