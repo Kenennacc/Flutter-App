@@ -9,13 +9,12 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
-  int _counter = 0;
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.grey.shade300,
         appBar: AppBar(
           leading: const Icon(
-            Icons.chevron_left,
+            Icons.menu,
             size: 30,
             color: Colors.white,
           ),
@@ -32,29 +31,72 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontWeight: FontWeight.normal),
           ),
         ),
-        body: Container(
-            /*color: Colors.pinkAccent,
-            height: 200, width: 200,*/
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(color: Colors.pinkAccent, width: 200, height: 200
-                /*const Text(
-              'Burger',
-              style: TextStyle(fontSize: 15, color: Colors.white),
-            ),*/
-                ),
-
+        body: GridView.count(
+          primary: false,
+          padding: const EdgeInsets.all(20),
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          crossAxisCount: 2,
+          children: <Widget>[
             Container(
-              color: Colors.greenAccent,
-              width: 200,
-              height: 200,
-            ) /*const Text(
-              'five dollars',
-              style: TextStyle(fontSize: 12, color: Colors.black),
-            ),*/
-            //Container(color: Colors.greenAccent, height: 200, width: 200),
+              padding: const EdgeInsets.all(8),
+              child: const Text("He'd have you all unravel at the"),
+              color: Colors.yellowAccent,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Heed not the rabble'),
+              color: Colors.pinkAccent,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Sound of screams but the'),
+              color: Colors.purpleAccent,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Who scream'),
+              color: Colors.teal[400],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Revolution is coming...'),
+              color: Colors.orangeAccent,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Revolution, they...'),
+              color: Colors.redAccent,
+            ),
           ],
-        )));
+        )
+        /*Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Container(
+                color: Colors.pinkAccent,
+                width: 200,
+                height: 200,
+                child: Text(
+                  'Burger',
+                  style: TextStyle(fontSize: 25, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                color: Colors.greenAccent,
+                width: 200,
+                height: 200,
+                child: Text(
+                  'Meat',
+                  style: TextStyle(fontSize: 25, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              )
+            ],
+          ),
+        )*/
+        );
   }
 }
