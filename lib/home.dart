@@ -21,7 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
           elevation: 10,
           backgroundColor: Colors.orangeAccent,
           centerTitle: true,
-          actions: [Icon(Icons.shopping_bag_outlined)],
+          actions: [
+            IconButton(
+                onPressed: () {}, icon: Icon(Icons.shopping_bag_outlined)),
+          ],
           title: const Text(
             "Home Screen",
             style: TextStyle(
@@ -33,40 +36,66 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: GridView.count(
           primary: false,
-          padding: const EdgeInsets.all(20),
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
+          padding: const EdgeInsets.all(1),
+          /*crossAxisSpacing: 10,
+          mainAxisSpacing: 10,*/
           crossAxisCount: 2,
           children: <Widget>[
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text("He'd have you all unravel at the"),
+              child: Text("Burger",
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
               color: Colors.yellowAccent,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Heed not the rabble'),
+              child: const Text('Soup',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
               color: Colors.pinkAccent,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Sound of screams but the'),
+              child: const Text('Soft Drink',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
               color: Colors.purpleAccent,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Who scream'),
+              child: const Text('Beer',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
               color: Colors.teal[400],
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Revolution is coming...'),
+              child: const Text('Pizza',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
               color: Colors.orangeAccent,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Revolution, they...'),
+              child: const Text('Donut',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
               color: Colors.redAccent,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Rice',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
+              color: Colors.brown,
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Meat',
+                  style: TextStyle(fontSize: 25, color: Colors.black),
+                  textAlign: TextAlign.center),
+              color: Colors.blueGrey,
             ),
           ],
         )
