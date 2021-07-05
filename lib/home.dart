@@ -35,67 +35,85 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: GridView.count(
-          primary: false,
-          padding: const EdgeInsets.all(1),
-          /*crossAxisSpacing: 10,
-          mainAxisSpacing: 10,*/
+          primary: true,
+          padding: EdgeInsets.all(10),
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
           crossAxisCount: 2,
           children: <Widget>[
             Container(
+                padding: EdgeInsets.all(
+                    8) /*only(
+                  left: 30.0, right: 30.0, top: 30.0, bottom: 30.0)*/
+                ,
+                child: Image(
+                  image: NetworkImage(
+                      'https://www.nicepng.com/png/detail/8-87928_donut-vector-watercolor-donuts-purple-clip-art.png'),
+                ),
+
+                /*Icon(Icons.audiotrack,
+                color: Colors.green,
+                size: 30.0,),*/
+
+                /*Text("Burger",
+                      style: TextStyle(fontSize: 25, color: Colors.black),
+                      textAlign: TextAlign.center),*/
+                color: Colors.white),
+            Container(
               padding: const EdgeInsets.all(8),
-              child: Text("Burger",
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.yellowAccent,
+              child: Image(
+                image: NetworkImage(
+                    'https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-burger-vector-illustration-isolated-on-white-background-hamburger-clip-art-png-image_1745801.jpg'),
+              ),
+              color: Colors.white,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Soup',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.pinkAccent,
+              child: Image(
+                image: NetworkImage(
+                    'https://png.pngtree.com/png-vector/20191030/ourmid/pngtree-soup-vector-illustration-with-filled-line-design-isolated-on-white-background-png-image_1923567.jpg'),
+              ),
+              color: Colors.white,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Soft Drink',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.purpleAccent,
+              child: Image(
+                image: NetworkImage(
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbFiZBB06740LUfkNRRGFEkzfhlcnHD13MAQ&usqp=CAU'),
+              ),
+              color: Colors.white,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Beer',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.teal[400],
+              child: Image(
+                image: NetworkImage(
+                    'https://www.pngkey.com/png/full/286-2869600_pizza-take-pizza-vector.png'),
+              ),
+              color: Colors.white,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Pizza',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.orangeAccent,
+              child: Image(
+                image: NetworkImage(
+                    'https://img.freepik.com/free-vector/soda-can-aluminium-white_1308-32368.jpg?size=626&ext=jpg'),
+              ),
+              color: Colors.white,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Donut',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.redAccent,
+              child: Image(
+                image: NetworkImage(
+                    'https://png.pngtree.com/png-vector/20191030/ourmid/pngtree-soup-vector-illustration-with-filled-line-design-isolated-on-white-background-png-image_1923567.jpg'),
+              ),
+              color: Colors.white,
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Rice',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.brown,
-            ),
-            Container(
-              padding: const EdgeInsets.all(8),
-              child: const Text('Meat',
-                  style: TextStyle(fontSize: 25, color: Colors.black),
-                  textAlign: TextAlign.center),
-              color: Colors.blueGrey,
+              child: Image(
+                image: NetworkImage(
+                    'https://www.nicepng.com/png/detail/8-87928_donut-vector-watercolor-donuts-purple-clip-art.png'),
+              ),
+              color: Colors.white,
             ),
           ],
         )
